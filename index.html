@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Cadastro de Filmes</legend>
+
+            <label for="nome">Título:  
+                <input
+                type="text"
+                placeholder="Informe o título"
+                id="nome"
+                class="caixa_entrada"
+                required
+                >
+            </label>
+            <br>
+             <label for="nome">Gênero:
+                <input
+                type="text"
+                placeholder="Informe o gênero"
+                id="nome"
+                class="caixa_entrada"
+                required
+                >
+            <br>    
+            <label for="legendado">
+                <input 
+                type="radio"
+                name="radio_s"
+                id="legendado"
+                value="legendado"
+                required
+                >Legendado
+            </label>
+        
+            <label for="dublado">
+                <input
+                type="radio"
+                name="radio_s"
+                id="dublado"
+                value="dublado"
+                required
+                >Dublado
+            </label>
+
+            <br><br>
+            <button type="submit" id="lista">Minha Lista</button>
+            <button type="submit" id="assistidos">Assistidos</button>
+           
+
+        </fieldset>
+    </form>
+
+    <div>
+        <fieldset>
+            <legend>Histórico</legend>
+
+            <div id="resultado_espera"></div>
+
+        </fieldset>
+    </div>
+
+    <div>
+        <br>
+           <input type="button" id="btn_atender" onclick="atender()" value="Remover do Histórico">
+    </div>
+    
+    <script src="filmes.js"></script>
+
+    
+</body>
+</html>
+
