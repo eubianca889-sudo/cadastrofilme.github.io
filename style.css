@@ -1,3 +1,29 @@
 body{
-    background: url(guhj.png);
+    background: url(netflix2.jpg);
+    color: aliceblue;
+
+    
+}
+
+button{
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+
+legend{
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+label{
+    color: #ff0000;
+    background-color: rgb(18, 19, 19);
+}
+
+fieldset{
+    background-color: rgb(27, 26, 26);
+    border-radius: 10px;
 }
